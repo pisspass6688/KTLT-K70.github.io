@@ -16,25 +16,24 @@ using namespace std;
 int main()
 {
     //Khai báo
-    float x, sinx = 0, t;
-        int n = 0;
+    float x, i = 0, s;
         
         //Giao diện nhập
         printf("=== Chương trình tính sinx với độ chính xác 10^-4 ===\n\n");
         printf("Hãy nhập x cho công thức sau:\nsinx = x - x^3/3! + x^5/5! + ... + (-1)^n*x^(2*n+1)/(2*n+1)! + ...\n\n");
         printf("(Giới hạn chương trình x = 58)Nhập x = ");
-
 	scanf("%f", &x);
+        
+	s = x;
+	tg = x;
         
         do
         {
-	    t = x;
-	    sinx += t;
-	    n++;
-	    
-	    t = -t*x*x/((2*n)*(2*n+1));
+	    i += 1;
+	    tg = tg*x*x/((2*n)*(2*n+1));
+	    s += tg;
         }
-        while(fabs(t) >= 0.0001);
+        while(fabs(s) >= 0.0001);
 		printf("sin(%0.1f) = %0.1f\n", x, sinx);
 
     cout<<endl;
