@@ -15,8 +15,8 @@ int main()
 {
     int n,i,gt = 1,Tong = 0;
     
-    printf("chương trình tính tổng Q = 1.1! + 2.2! +.. + n.n!");
-    printf("Nhập ");
+    printf("\n\nChương trình tính tổng Q = 1.1! + 2.2! +.. + n.n!\n");
+    printf("Nhập n = ");
     scanf("%d", &n);
     
     for(int i = 1; i <= n; i++)
