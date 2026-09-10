@@ -22,31 +22,20 @@ int main()
         //Giao diện nhập
         printf("=== Chương trình tính sinx với độ chính xác 10^-4 ===\n\n");
         printf("Hãy nhập x cho công thức sau:\nsinx = x - x^3/3! + x^5/5! + ... + (-1)^n*x^(2*n+1)/(2*n+1)! + ...\n\n");
-        printf("Nhập x = ");
+        printf("(Giới hạn chương trình x = 58)Nhập x = ");
 
 	scanf("%f", &x);
         
         do
         {
-            int gt = 1;
-	    
-            // Tính (2n+1)!
-            for (int i = 1; i <= n * 2 + 1; i++)
-            {
-                gt = gt * i;
-            }
-	    
-            // Tính số hạng
-            t = pow(-1, n) * pow(x, 2 * n + 1) / gt;
-	    
-            // Cộng vào tổng
-            sinx = sinx + t;
-            
-            // Sang số hạng tiếp theo
+	    t = x;
+	    sinx += t;
 	    n++;
+	    
+	    t = -t*x*x/((2*n)*(2*n+1));
         }
         while(fabs(t) >= 0.0001);
-		printf("sin(%f) = %f\n", x, sinx);
+		printf("sin(%0.1f) = %0.1f\n", x, sinx);
 
     cout<<endl;
     return 0;
