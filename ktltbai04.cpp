@@ -16,25 +16,22 @@ using namespace std;
 int main()
 {
     //Khai báo
-    float x,i, sinx = 0, t;
-        int n = 0, a ;
+    float x, sinx = 0, t;
+        int n = 0;
         
         //Giao diện nhập
         printf("=== Chương trình tính sinx với độ chính xác 10^-4 ===\n\n");
         printf("Hãy nhập x cho công thức sau:\nsinx = x - x^3/3! + x^5/5! + ... + (-1)^n*x^(2*n+1)/(2*n+1)! + ...\n\n");
-        printf("Nhập x1 = \n");
-        for(i=0;i<n;i++)
-        {
-            printf("Nhập x%d = ",i+1);
-            scanf("%d",&a[i]);
-        }
+        printf("Nhập x = ");
+
+	scanf("%f", &x);
         
         do
         {
             int gt = 1;
 	    
             // Tính (2n+1)!
-            for (int i = 1; i <= 2 * n + 1; i++)
+            for (int i = 1; i <= n * 2 + 1; i++)
             {
                 gt = gt * i;
             }
@@ -47,8 +44,8 @@ int main()
             
             // Sang số hạng tiếp theo
 	    n++;
-            }
-            while(fabs(t) >= 0.0001);
+        }
+        while(fabs(t) >= 0.0001);
 		printf("sin(%f) = %f\n", x, sinx);
 
     cout<<endl;
