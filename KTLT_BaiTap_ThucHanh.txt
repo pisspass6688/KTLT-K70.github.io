@@ -1,0 +1,151 @@
+BÀI TẬP THỰC HÀNH
+MÔN KỸ THUẬT LẬP TRÌNH (TH02034)
+
+Bài 00(ktltbai00.cpp): Giải phương trình bậc 2 
+ax^2 + bx + c = 0 (a#0)
+
+Bài 01(ktltbai01.cpp): Giải hệ phương trình bậc nhất
+a1x + b1y = c1
+a2x + b2y = c2
+
+Bài 02(ktltbai02.cpp): Nhập vào 1 số nguyên dương có 2 chữ số.
+Đưa ra dạng đọc của số nguyên đó.
+Ví dụ: 23 => đọc là Hai ba; 90 => đọc là Chín mươi.
+
+Bài 03(ktltbai03.cpp): Viết chương trình tính tổng Q = 1.1! + 2.2! +.. + n.n!.
+
+Bài 04(ktltbai04.cpp): Viết chương trình tính sinx với độ chính xác 10^-4 theo công thức sau:
+    sinx = x - x^3/3! + x^5/5! + ... + (-1)^n*x^(2*n+1)/(2*n+1)! + ...
+    
+Bài 05(ktltbai05.cpp): Viết chương trình tạo menu sau:
+	TÍNH DIỆN TÍCH VÀ CHU VI CÁC HÌNH
+
+        1. Tính diện tích và chu vi hình tam giác biết 3 cạnh
+	2. Tính diện tích và chu vi hình tròn biết bán kính
+	3. Tính diện tích và chu vi hình chữ nhật biết 2 cạnh
+	4. Kết thúc chương trình
+
+	Chọn hình để tính(1/2/3/4):
+
+    Khi người sử dụng chọn 1 hoặc 2 hoặc 3 thì chương trình phải lấy vào dữ liệu,
+    tính diện tích và chu vi hình tương ứng, đưa kết quả ra màn hình.
+    Khi đưa kết quả ra màn hình phải dừng lại để người sử dụng xem, chờ cho đến khi người sử dụng
+    ấn phím bất kỳ thì quay trở lại menu. Khi người sử dụng chọn 4 thì kết thúc chương trình.
+    
+Bài 06(ktltbai06.cpp): Cho dãy số nguyên a1, a2, a3,... an. Đưa các số lẻ về đầu dãy, các số chẵn về cuối dãy.
+Đưa ra màn hình dãy số ban đầu và dãy số sau khi thay đổi.
+
+Bài 07(ktltbai07.cpp): Cho dãy số nguyên a1, a2, a3,... an. Xóa phần tử thứ k (1<=k<=n) trong dãy số.
+Đưa ra màn hình dãy số ban đầu và dãy số sau khi xóa.
+
+Bài 07b(ktltbai07b.cpp): Cho dãy số nguyên a1, a2, a3,... an. Chèn thêm phần tử x vào vị trí thứ k (1<=k<=n)
+trong dãy số. Đưa ra màn hình dãy số ban đầu và dãy số sau khi chèn.
+
+Bài 08(ktltbai08.cpp): Cho ma trận số nguyên có m hàng, n cột. Tìm số lớn nhất trên từng hàng và đổi chỗ về đầu hàng.
+Đưa ma trận ban đầu và ma trận sau khi thay đổi ra màn hình theo định dạng hàng, cột.
+
+Bài 09(ktltbai09.cpp): Cho ma trận nguyên Amxn. Xây dựng ma trận chuyển vị AT.
+Đưa các ma trận ra màn hình theo định dạng hàng, cột.
+
+Bài 10(ktltbai10.cpp): Cho hai ma trận số nguyên A,B có m hàng, n cột. Tính tổng 2 ma trận: C = A + B.
+Đưa ma trận A, B, C ra màn hình theo định dạng hàng, cột.
+
+Bài 11(ktltbai11.cpp): Cho ma trận số nguyên A có kích thước mxp, ma trận số nguyên B có kích thước pxn.
+Tính tích 2 ma trận: Cmxn = Amxp x Bpxn. Đưa ma trận A, B, C ra màn hình theo định dạng hàng, cột.
+
+Bài 12(ktltbai12.cpp): Nhập vào một số nguyên dương. Đưa ra xâu ký tự số hex tương ứng với số nguyên dương đã nhập.
+
+Bài 13(ktltbai13.cpp): Nhập vào một xâu ký tự số nhị phân có tối đa 16 bit. Đưa ra giá trị của số nhị phân đó.
+
+Bài 14(ktltbai14.cpp): Nhập vào một xâu ký tự số hex có tối đa 8 chữ số. Đưa ra giá trị của số hex đó.
+
+Bài 15(ktltbai15.cpp): Nhập vào một danh sách n tên (chỉ tên, không họ đệm). Sắp xếp danh sách tên theo vần ABC.
+
+Bài 16(ktltbai16.cpp): Nhập vào một họ tên. Tách riêng họ đệm và tên. Đưa kết quả ra màn hình.
+
+Bài 17(ktltbai17.cpp): Nhập vào một họ tên. Chuẩn hóa họ tên theo các yêu cầu sau:
+(1) Đầu và cuối họ tên không có dấu cách; (2) Giữa các từ chỉ có một dấu cách;
+(3) Các chữ đầu tiên của từ là chữ hoa, các chữ còn lại là chữ thường.
+
+Bài 18(ktltbai18.cpp): Nhập vào thông tin của 1 cán bộ có mã cán bộ, họ tên, ngày sinh, giới tính;
+ngày sinh có ngày, tháng, năm; giới tính là Nam/Nu. Đưa các thông tin đã nhập ra màn hình, cho biết cán bộ này
+đã bao nhiêu tuổi.
+
+Bài 19(ktltbai19.cpp): Nhập vào thông tin của n mặt hàng, mỗi mặt hàng có thông tin về tên hàng, số lượng, đơn giá.
+Tính tổng tiền của n mặt hàng.
+
+Bài 20(ktltbai20.cpp): Viết chương trình quản lý điểm môn học của sinh viên. Mỗi sinh viên có các thông tin về mã sv,
+họ tên, lớp, điểm C.Cần, điểm kiểm tra, điểm thi. Điểm môn học = 0,1xC.Cần + 0,3xK.Tra + 0,6xThi.
+Nhập vào mảng động danh sách n sinh viên. Tìm và đưa ra thông tin về sinh viên có điểm môn học cao nhất.
+
+Bài 21(ktltbai21.cpp): Viết chương trình tính tổ hợp chập k của n, C(k,n). Yêu cầu trong chương trình có sử dụng
+hàm tự tạo để tính tổ hợp chập k của n.
+
+Bài 22(ktltbai22.cpp): Viết chương trình đưa ra các số nguyên tố trong khoảng từ 1 đến n. Yêu cầu trong chương trình
+có sử dụng hàm tự tạo để kiểm tra một số nguyên có phải là số nguyên tố không.
+
+Bài 23(ktltbai23.cpp): Cho tệp văn bản "daysonguyen.txt" chứa dãy số nguyên có n phần tử. Đọc dãy số nguyên từ tệp vào
+mảng động. Xóa tất cả các phần tử của dãy số có giá trị bằng x. Thay đổi kích thước mảng động bằng với số phần tử
+còn lại của dãy số.
+
+Bài 24(ktltbai24.cpp): Tính gần đúng e^x với độ chính xác Eps=0.0001 theo công thức dưới sau:
+e^x = 1 + x + x^2/2! + x^3/3! + … + x^n/n! + …
+Yêu cầu trong chương trình sử dụng tất cả là biến động.
+
+Bài 25(ktltbai25.cpp): Nhập vào danh sách n sinh viên, mỗi sinh viên có thông tin về mã sinh viên, họ tên, ngày sinh,
+giới tính, lớp. Tìm sinh viên có tuổi cao nhất tính đến thời điểm hiện tại. Yêu cầu trong chương trình có sử dụng mảng động
+để chứa danh sách sinh viên.
+
+Bài 26(ktltbai26.cpp): Cho tệp văn bản "daysonguyen.txt" chứa dãy số nguyên có n phần tử. Đọc dãy số nguyên từ tệp vào
+mảng động. Sắp xếp dãy số tăng dần. Yêu cầu viết một hàm sắp xếp dãy số, một hàm hoán đổi nội dung 2 ô nhớ để dùng trong
+hàm sắp xếp, một hàm đưa dãy số ra màn hình.
+
+Bài 27(ktltbai27.cpp): Nhập vào một xâu ký tự số hex có tối đã 8 chữ số. Tính giá trị của số hex đã nhập.
+Y/c viết hàm nhận vào xâu ký tự số hex và trả về giá trị của nó.
+
+Bài 28(ktltbai28.cpp): Làm lại bài 17 nhưng yêu cầu viết hàm chuẩn hóa họ tên nhận vào qua đối số.
+
+Bài 29(ktltbai29.cpp): Nhập vào một xâu ký tự số nhị phân có tối đa 32 bit. Đưa ra xâu ký tự số hex tương ứng.
+Y/c viết hàm nhận vào xâu ký tự số nhị phân và trả về xâu ký tự số hex tương ứng qua đối số.
+
+Bài 30(ktltbai30.cpp): Cho tệp văn bản "matran.txt" chứa ma trận nguyên có kích thước mxn.
+Đọc vào ma trận từ tệp. Đếm số phần tử lẻ. Y/c viết hàm:(1) Hàm nhận vào ma trận qua đối số và trả về số đếm được.
+(2) Hàm đưa ma trận ra màn hình theo định dạng hàng, cột.
+
+Bài 31(ktltbai31.cpp): Tính tổng hai ma trận nguyên có kích thước mxn, Cmxn = Amxn + Bmxn.
+Ma trận A và B đọc vào từ tệp văn bản "matranAB.txt". Y/c viết hàm: (1) Hàm đọc vào từ tệp 2 ma trận A và B.
+(2) Hàm nhận vào hai ma trận qua đối số và trả về ma trận tổng; (3) Hàm đưa ma trận ra màn hình theo định dạng hàng, cột. 
+
+Bài 32(ktltbai32.cpp): Làm lại bài 11, cho tệp văn bản "matranA.txt" chứa ma trận số nguyên A có kích thước mxp,
+tệp văn bản "matranB.txt" chứa ma trận số nguyên B có kích thước pxn. Tính tích 2 ma trận: Cmxn = Amxp x Bpxn.
+Y/c viết hàm: (1) Hàm đọc vào ma trận từ tệp. (2) Hàm nhận vào hai ma trận qua đối số và trả về ma trận tích;
+(3) Hàm đưa ma trận ra màn hình theo định dạng hàng, cột. 
+
+Bài 33(ktltbai33.cpp): Cho tệp văn bản "daysonguyen.txt" chứa dãy số nguyên có n phần tử. Đọc dãy số nguyên từ tệp vào
+mảng động. Tìm phần tử có giá trị bằng x. Y/c viết hàm: (1) Hàm nhận vào qua đối số mảng chứa dãy số và x,
+trả về vị trí phần tử nếu tìm thấy và trả về 0 nếu không tìm thấy phần tử bằng x; (2) Hàm đưa dãy số ra màn hình;
+(3) Hàm đọc dãy số từ tệp vào mảng động, gửi kết quả ra ngoài qua đối số.
+
+Bài 34(ktltbai34.cpp): Tạo tệp nhị phân "sothuc.dat" chứa n số thực nhập vào từ bàn phím.
+Đọc lại tất cả các số thực từ tệp và đưa ra màn hình. Tính TBC của các số thực. Nhập thêm số thực x và ghi vào cuối tệp.
+
+Bài 35(ktltbai35.cpp): Viết chương trình tạo tệp văn bản "songuyen.txt" bằng hàm của ngôn ngữ C để chứa n số nguyên
+nhập vào từ bàn phím. Trong tệp "songuyen.txt", dòng 1 chứa giá trị của n, dòng 2 chứa các số nguyên cách nhau
+bởi 1 dấu cách. Đọc lại tất cả các số nguyên từ tệp và đưa ra màn hình. Tính TBC các số nguyên.
+
+Bài 36(ktltbai36.cpp): Cho tệp văn bản input-bai36.txt chứa tọa độ của 2 điểm A và B trên mặt phẳng.
+Đọc tọa độ của 2 điểm và tính khoảng cách AB. Ghi kết quả ra tệp output-bai36.txt. Tệp input-bai36.txt có cấu trúc như sau:
+A  2.5  4
+B  3  5
+Tệp output-bai36.txt có cấu trúc như sau:
+A(2.5; 4)
+B(3; 5)
+AB = 1.12
+
+Bài 37(ktltbai37.cpp): Cho một tệp nhị phân "songuyen.dat" chứa các phần tử là số nguyên. Thay thế phần tử thứ k
+bằng giá trị x nhập vào từ bàn phím (1 <= k <= n, trong đó n là số phần tử trên tệp).
+
+Bài 38(ktltbai38.cpp): Viết chương trình nhập vào thông tin của sinh viên cho tới khi không muốn nhập nữa.
+Mỗi sinh viên có thông tin về mã sv, họ tên, điểm tbc. Ghi thông tin của các sinh viên ra tệp nhị phân "sinhvien.dat".
+Đọc tệp "sinhvien.dat" và cho biết trên tệp có bao nhiêu sinh viên. Đưa ra thông tin của sinh viên thứ m
+và sửa điểm tbc của sinh viên này.
