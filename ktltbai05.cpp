@@ -75,6 +75,13 @@ int main()
                 printf("=== Đóng Chương Trình ===\n\n");
             }
 
+			//Nhập 0 để trở về menu
+			do
+			{
+			    printf("Nhập 0 để quay lại menu: ");
+			    scanf("%d", &zero);
+			} 
+			while (zero != 0);
             break;
         }
 
@@ -96,6 +103,13 @@ int main()
             printf("Diện tích hình tròn là: %0.1f", dt);
             printf("\nChu vi hình tròn là: %0.1f", cv);
 
+			//Nhập 0 để trở về menu
+			do
+			{
+			    printf("Nhập 0 để quay lại menu: ");
+			    scanf("%d", &zero);
+			} 
+			while (zero != 0);
             break;
         }
 
@@ -118,6 +132,13 @@ int main()
             printf("\nChu vi hình chữ nhật = %.2f", chuvi);
             printf("\nDiện tích hình chữ nhật = %.2f", dientich);
 
+			//Nhập 0 để trở về menu
+			do
+			{
+			    printf("Nhập 0 để quay lại menu: ");
+			    scanf("%d", &zero);
+			} 
+			while (zero != 0);
             break;
         }
 
