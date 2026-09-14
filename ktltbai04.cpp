@@ -24,26 +24,18 @@ int main()
     printf("(Giới hạn chương trình x = 58) Nhập x = ");
     scanf("%f", &x);
 
-    //tổng ban đầu
     s = x;
-    // Gán số hạng đầu tiên cho biến trung gian
     tg = x;
 
     do
     {
         i += 1;
-        
-        // Tính số hạng tiếp theo và lưu vào biến trung gian tg
         tg = -tg * x * x / ((2 * i) * (2 * i + 1));
-        
-        // Cộng số hạng hiện tại (tg) vào tổng s
         s += tg;
     }
-    //10^-4 == 0.0001
     while(fabs(tg) >= 0.0001);
-    
-    //Khi |trung gian| < 0.0001 không đạt điều kiện để lặp while
-    printf("sin(%0.1f) = %0.2f\n", x, s);
+
+    printf("sin(%0.1f) = %0.4f\n", x, s);
 
     cout << endl;
     return 0;
