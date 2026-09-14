@@ -162,3 +162,5 @@ int main()
     cout<<enld;
     return 0;
 }
+// ===Dinh nghia ham ===
+
