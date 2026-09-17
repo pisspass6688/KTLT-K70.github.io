@@ -143,10 +143,10 @@ int main()
 	    {
 	        printf("Nhập 0 để quay lại menu: ");
 	        scanf("%d", &zero);
-	    }
+        }
 	    while (zero != 0);
             break;
-        }
+            
     } while (chon != 4);
 
     cout<<endl;
