@@ -45,108 +45,108 @@ int main()
 
         switch (chon)
         {
-        case 1:
-        {
-            // Khởi tạo biến
-            float a, b, c, cv, ncv, dt;
-
-            // Giao diện người dùng tương tác với máy
-            printf("\n\n=== Chương trình tính chu vi và diện tích tam giác ===\n");
-            printf("Vui lòng cung cấp dữ liệu 3 cạnh tam giác (cm)\n\n");
-            printf("||  Cạnh thứ nhất = ");
-            scanf("%f", &a);
-            printf("||  Cạnh thứ hai = ");
-            scanf("%f", &b);
-            printf("||  Cạnh thứ ba = ");
-            scanf("%f", &c);
-
-            // Kiểm tra trước khi tính toán
-            // Hình tam giác có tổng của hai cạnh lớn hơn cạnh còn lại
-            if (a + b > c && a + c > b && b + c > a)
+            case 1:
             {
+                // Khởi tạo biến
+                float a, b, c, cv, ncv, dt;
+
+                // Giao diện người dùng tương tác với máy
+                printf("\n\n=== Chương trình tính chu vi và diện tích tam giác ===\n");
+                printf("Vui lòng cung cấp dữ liệu 3 cạnh tam giác (cm)\n\n");
+                printf("||  Cạnh thứ nhất = ");
+                scanf("%f", &a);
+                printf("||  Cạnh thứ hai = ");
+                scanf("%f", &b);
+                printf("||  Cạnh thứ ba = ");
+                scanf("%f", &c);
+
+                // Kiểm tra trước khi tính toán
+                // Hình tam giác có tổng của hai cạnh lớn hơn cạnh còn lại
+                if (a + b > c && a + c > b && b + c > a)
+                {
+                    // Đoạn tính toán
+                    cv = a + b + c;
+                    ncv = cv / 2;
+                    dt = sqrt(ncv * (ncv - a) * (ncv - b) * (ncv - c));
+
+                    // Đoạn xuất kết quả
+                    printf("\nChu vi tam giác = %0.1f\n", cv);
+                    printf("Diện tích tam giác = %0.1f\n\n", dt);
+                }
+                else
+                {
+                    printf("\n\nĐây không phải hình tam giác!\n");
+                    printf("=== Đóng Chương Trình ===\n\n");
+                }
+
+                break;
+            }
+            case 2:
+            {
+                // Khai báo biến
+                float r, dt, cv;
+
+                // Đoạn nhập dữ liệu
+                printf("Chương trình tính diện tích và chu vi hình tròn có bán kính r");
+                printf("\n\nNhập vào bán kính hình tròn: ");
+                scanf("%f", &r);
+
                 // Đoạn tính toán
-                cv = a + b + c;
-                ncv = cv / 2;
-                dt = sqrt(ncv * (ncv - a) * (ncv - b) * (ncv - c));
+                dt = 3.1415 * r * r;
+                cv = 2 * 3.1415 * r;
 
                 // Đoạn xuất kết quả
-                printf("\nChu vi tam giác = %0.1f\n", cv);
-                printf("Diện tích tam giác = %0.1f\n\n", dt);
+                printf("Diện tích hình tròn là: %0.1f", dt);
+                printf("\nChu vi hình tròn là: %0.1f", cv);
+
+                break;
             }
-            else
+            case 3:
             {
-                printf("\n\nĐây không phải hình tam giác!\n");
-                printf("=== Đóng Chương Trình ===\n\n");
+                // Khai báo biến
+                float dai, rong, chuvi, dientich;
+
+                // Đoạn nhập dữ liệu
+                printf("\n\n=== Chương trình tính chu vi và diện tích hình chữ nhật ===\n");
+                printf("\nNhập chiều dài: ");
+                scanf("%f", &dai);
+                printf("Nhập chiều rộng: ");
+                scanf("%f", &rong);
+
+                // Đoạn tính toán
+                chuvi = 2 * (dai + rong);
+                dientich = dai * rong;
+
+                // Đoạn xuất kết quả
+                printf("\nChu vi hình chữ nhật = %.2f", chuvi);
+                printf("\nDiện tích hình chữ nhật = %.2f", dientich);
+
+                break;
             }
-
-            break;
+            case 4:
+            {
+                // Kết thúc chương trình
+                printf("\nKết thúc chương trình!!");
+                break;
+            }
+            default:
+            {
+                // Thông báo lựa chọn không hợp lệ
+                printf("\nLựa chọn không hợp lệ!");
+                printf("\nHãy chọn lại\n\n");
+                printf("Hoặc ấn tổ hợp Ctrl C để dừng lại!!!");
+                break;
+            }
         }
-        case 2:
-        {
-            // Khai báo biến
-            float r, dt, cv;
-
-            // Đoạn nhập dữ liệu
-            printf("Chương trình tính diện tích và chu vi hình tròn có bán kính r");
-            printf("\n\nNhập vào bán kính hình tròn: ");
-            scanf("%f", &r);
-
-            // Đoạn tính toán
-            dt = 3.1415 * r * r;
-            cv = 2 * 3.1415 * r;
-
-            // Đoạn xuất kết quả
-            printf("Diện tích hình tròn là: %0.1f", dt);
-            printf("\nChu vi hình tròn là: %0.1f", cv);
-
-            break;
-        }
-        case 3:
-        {
-            // Khai báo biến
-            float dai, rong, chuvi, dientich;
-
-            // Đoạn nhập dữ liệu
-            printf("\n\n=== Chương trình tính chu vi và diện tích hình chữ nhật ===\n");
-            printf("\nNhập chiều dài: ");
-            scanf("%f", &dai);
-            printf("Nhập chiều rộng: ");
-            scanf("%f", &rong);
-
-            // Đoạn tính toán
-            chuvi = 2 * (dai + rong);
-            dientich = dai * rong;
-
-            // Đoạn xuất kết quả
-            printf("\nChu vi hình chữ nhật = %.2f", chuvi);
-            printf("\nDiện tích hình chữ nhật = %.2f", dientich);
-
-            break;
-        }
-        case 4:
-        {
-            // Kết thúc chương trình
-            printf("\nKết thúc chương trình!!");
-            break;
-        }
-        default:
-        {
-            // Thông báo lựa chọn không hợp lệ
-            printf("\nLựa chọn không hợp lệ!");
-            printf("\nHãy chọn lại\n\n");
-            printf("Hoặc ấn tổ hợp Ctrl C để dừng lại!!!");
-            break;
-        }
-
         //Nhập 0 để trở về menu
-	    do
-	    {
-	        printf("Nhập 0 để quay lại menu: ");
-	        scanf("%d", &zero);
+        do
+        {
+            printf("Nhập 0 để quay lại menu: ");
+            scanf("%d", &zero);
         }
-	    while (zero != 0);
-            break;
-            
+    while (zero != 0);
+        break;
+
     } while (chon != 4);
 
     cout<<endl;
