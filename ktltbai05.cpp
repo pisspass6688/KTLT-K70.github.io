@@ -80,7 +80,7 @@ int main()
             }
 
             break;
-
+        }
         case 2:
         {
             // Khai báo biến
@@ -100,7 +100,7 @@ int main()
             printf("\nChu vi hình tròn là: %0.1f", cv);
 
             break;
-
+        }
         case 3:
         {
             // Khai báo biến
@@ -122,13 +122,15 @@ int main()
             printf("\nDiện tích hình chữ nhật = %.2f", dientich);
 
             break;
-
+        }
         case 4:
+        {
             // Kết thúc chương trình
             printf("\nKết thúc chương trình!!");
             break;
-
+        }
         default:
+        {
             // Thông báo lựa chọn không hợp lệ
             printf("\nLựa chọn không hợp lệ!");
             printf("\nHãy chọn lại\n\n");
