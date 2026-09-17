@@ -149,7 +149,7 @@ int main()
                 scanf("%d", &zero);
             }
             while (zero != 0);
-
+        }
     } while (chon != 4);
 
     cout<<endl;
