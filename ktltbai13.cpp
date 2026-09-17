@@ -43,7 +43,7 @@ int main()
         }
     }
 
-    // Nếu xâu không hợp lệ
+    // Nếu xâu không phải là số nhị phân
     if (hopLe == 0)
     {
         printf("Xâu nhập vào không phải là số nhị phân!\n");
