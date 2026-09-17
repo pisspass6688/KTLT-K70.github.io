@@ -138,14 +138,16 @@ int main()
                 break;
             }
         }
-        //Nhập 0 để trở về menu
-        do
+
+        if (chon == 1 || chon == 2 || chon == 3)
         {
-            printf("Nhập 0 để quay lại menu: ");
-            scanf("%d", &zero);
-        }
-        while (zero != 0);
-            break;
+            //Nhập 0 để trở về menu
+            do
+            {
+                printf("Nhập 0 để quay lại menu: ");
+                scanf("%d", &zero);
+            }
+            while (zero != 0);
 
     } while (chon != 4);
 
