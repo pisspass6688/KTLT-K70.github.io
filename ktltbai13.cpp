@@ -41,7 +41,7 @@ int main()
     //Đưa ra giá trị của số nhị phân đó
     printf("Giá trị của số nhị phân là: %d\n", kq);
 
-    cout<<enld;
+    cout<<endl;
     return 0;
 }
 // == đinh nghia ham ===

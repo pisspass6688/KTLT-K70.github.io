@@ -99,7 +99,7 @@ int main()
         printf("\n");
     }
 
-    cout<<enld;
+    cout<<endl;
     return 0;
 }
 // == đinh nghia ham ===

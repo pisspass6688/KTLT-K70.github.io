@@ -56,7 +56,7 @@ int main()
         printf("%d ", a[i]);
     }
 
-    cout<<enld;
+    cout<<endl;
     return 0;
 }
 // == đinh nghia ham ===

@@ -160,7 +160,7 @@ int main()
 
     } while (chon != 4);
 
-    cout<<enld;
+    cout<<endl;
     return 0;
 }
 // ===Dinh nghia ham ===
