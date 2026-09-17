@@ -139,6 +139,7 @@ int main()
             }
         }
 
+        //Nếu default thì lập tức quay lại menu
         if (chon == 1 || chon == 2 || chon == 3)
         {
             //Nhập 0 để trở về menu
