@@ -6,6 +6,7 @@
 Bài 06(ktltbai06.cpp): Cho dãy số nguyên a1, a2, a3,... an. Đưa các số lẻ về đầu dãy, các số chẵn về cuối dãy.
 Đưa ra màn hình dãy số ban đầu và dãy số sau khi thay đổi.
 */
+#include<iostream>
 #include <stdio.h>
 
 using namespace std;

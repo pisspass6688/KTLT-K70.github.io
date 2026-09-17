@@ -6,6 +6,7 @@
 Bài 07b(ktltbai07b.cpp): Cho dãy số nguyên a1, a2, a3,... an. Chèn thêm phần tử x vào vị trí thứ k (1<=k<=n)
 trong dãy số. Đưa ra màn hình dãy số ban đầu và dãy số sau khi chèn.
 */
+#include<iostream>
 #include <stdio.h>
 
 using namespace std;

@@ -6,6 +6,7 @@
 Bài 13(ktltbai13.cpp): Nhập vào một xâu ký tự số nhị phân có tối đa 16 bit.
 Đưa ra giá trị của số nhị phân đó.
 */
+#include<iostream>
 #include <stdio.h>
 #include <string.h>
 

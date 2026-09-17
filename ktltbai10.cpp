@@ -6,6 +6,7 @@
 Bài 10(ktltbai10.cpp): Cho hai ma trận số nguyên A,B có m hàng, n cột. Tính tổng 2 ma trận: C = A + B.
 Đưa ma trận A, B, C ra màn hình theo định dạng hàng, cột.
 */
+#include<iostream>
 #include <stdio.h>
 
 using namespace std;
