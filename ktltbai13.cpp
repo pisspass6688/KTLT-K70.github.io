@@ -6,6 +6,7 @@
 Bài 13(ktltbai13.cpp): Nhập vào một xâu ký tự số nhị phân có tối đa 16 bit.
 Đưa ra giá trị của số nhị phân đó.
 */
+
 #include<iostream>
 #include <stdio.h>
 #include <string.h>
@@ -15,8 +16,8 @@ using namespace std;
 // === chương trình chính ===
 int main()
 {
-    //Khai báo biến và một xâu ký tự số nhị phân có tối đa 16 bit
-    int n, kq = 0; 
+    // Khai báo biến và một xâu ký tự số nhị phân có tối đa 16 bit
+    int n, kq = 0;
     char s[17];
 
     // Tên chương trình
@@ -24,23 +25,45 @@ int main()
 
     // Nhập xâu nhị phân
     printf("Nhập xâu ký tự số nhị phân (tối đa là 16 ký tự): ");
-    scanf("%16s", s);
+    scanf("%s", s);
 
     // Lấy độ dài xâu
     n = strlen(s);
 
-    // Đổi từ nhị phân sang thập phân
+    // Kiểm tra xâu có phải số nhị phân hay không
+    int hopLe = 1;
+
     for (int i = 0; i < n; i++)
     {
-        //Công thức
-        kq = kq * 2 + (s[i] - '0');
+        // Nếu ký tự khác 0 và khác 1 thì xâu không hợp lệ
+        if (s[i] != '0' && s[i] != '1')
+        {
+            hopLe = 0;
+            break;
+        }
     }
 
-    //Đưa ra giá trị của số nhị phân đó
-    printf("Giá trị của số nhị phân là: %d\n", kq);
+    // Nếu xâu không hợp lệ
+    if (hopLe == 0)
+    {
+        printf("Xâu nhập vào không phải là số nhị phân!\n");
+    }
+    else
+    {
+        // Đổi từ nhị phân sang thập phân
+        for (int i = 0; i < n; i++)
+        {
+            // Công thức
+            kq = kq * 2 + (s[i] - '0');
+        }
+
+        // Đưa ra giá trị của số nhị phân đó
+        printf("Giá trị của số nhị phân là: %d\n", kq);
+    }
 
     cout<<endl;
     return 0;
 }
-// == đinh nghia ham ===
+
+// == định nghĩa hàm ===
 
