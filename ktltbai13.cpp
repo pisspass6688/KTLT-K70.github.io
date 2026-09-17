@@ -24,10 +24,7 @@ int main()
 
     // Nhập xâu nhị phân
     printf("Nhập xâu ký tự số nhị phân (tối đa là 16 ký tự): ");
-    if (s[17])
-        scanf("%16s", s);
-    else
-        return 0;
+    scanf("%16s", s);
 
     // Lấy độ dài xâu
     n = strlen(s);
