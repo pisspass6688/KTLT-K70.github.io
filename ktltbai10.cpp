@@ -27,10 +27,10 @@ int main()
     // Nhập số hàng và số cột
     printf("Chương trình tính tổng 2 ma trận: C = A + B\n");
     printf("Nhập số hàng: ");
-    scanf("%d", &A.x);
+    scanf("%d", &A.m);
 
     printf("Nhập số cột: ");
-    scanf("%d", &A.);
+    scanf("%d", &A.n);
 
     //Đề bài nói A và B có cùng m hàng, n cột => B và C cùng kích thước
     B.m = A.m;
