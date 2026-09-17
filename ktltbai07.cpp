@@ -6,27 +6,31 @@
 Bài 07(ktltbai07.cpp): Cho dãy số nguyên a1, a2, a3,... an. Xóa phần tử thứ k (1<=k<=n) trong dãy số.
 Đưa ra màn hình dãy số ban đầu và dãy số sau khi xóa.
 */
+#include<iostream>
 #include <stdio.h>
 
 using namespace std;
 
+//===chuong trinh chinh===
 int main()
 {
     //Khai báo biến
     int a[100];
-    int n, k;
+    int n, k, i;
 
     // Giao diện nhập số lượng phần tử n và vị trí cần xóa
-    printf("Nhập n: ");
+    printf("\n\n===== Chương trình xóa phần tử thứ k (1<=k<=n) trong dãy số =====");
+    printf("\nNhập số lượng số của dãy số: ");
     scanf("%d", &n);
-
-    printf("Nhập dãy số:\n");
-    for (int i = 0; i < n; i++)
+    
+    printf("Nhập từng số một trong dãy số:\n");
+    for (i = 0; i < n; i++)
     {
+	printf("Số thứ nhất %d = ", i+1);
         scanf("%d", &a[i]);
     }
 
-    printf("Nhập vị trí k cần xóa: ");
+    printf("Nhập vị trí (k) cần xóa: ");
     scanf("%d", &k);
 
     // Đưa ra màn hình dãy số ban đầu
@@ -53,7 +57,7 @@ int main()
         printf("%d ", a[i]);
     }
 
-    cout<<enld;
+    cout<<endl;
     return 0;
 }
 // == đinh nghia ham ===
