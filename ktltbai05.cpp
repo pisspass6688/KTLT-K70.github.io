@@ -23,6 +23,7 @@ Bài 05(ktltbai05.cpp): Viết chương trình tạo menu sau:
 
 using namespace std;
 
+//===chuong trinh chinh===
 int main()
 {
     int chon, zero;

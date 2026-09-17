@@ -10,6 +10,7 @@ Bài 07(ktltbai07.cpp): Cho dãy số nguyên a1, a2, a3,... an. Xóa phần t�
 
 using namespace std;
 
+//===chuong trinh chinh===
 int main()
 {
     //Khai báo biến
