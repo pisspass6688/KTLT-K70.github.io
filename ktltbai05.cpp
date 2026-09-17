@@ -79,15 +79,7 @@ int main()
                 printf("=== Đóng Chương Trình ===\n\n");
             }
 
-	    //Nhập 0 để trở về menu
-	    do
-	    {
-		printf("Nhập 0 để quay lại menu: ");
-		scanf("%d", &zero);
-	    } 
-	    while (zero != 0);
             break;
-        }
 
         case 2:
         {
@@ -107,15 +99,7 @@ int main()
             printf("Diện tích hình tròn là: %0.1f", dt);
             printf("\nChu vi hình tròn là: %0.1f", cv);
 
-	    //Nhập 0 để trở về menu
-	    do
-	    {
-	        printf("Nhập 0 để quay lại menu: ");
-	        scanf("%d", &zero);
-	    } 
-	    while (zero != 0);
             break;
-        }
 
         case 3:
         {
@@ -137,15 +121,7 @@ int main()
             printf("\nChu vi hình chữ nhật = %.2f", chuvi);
             printf("\nDiện tích hình chữ nhật = %.2f", dientich);
 
-	    //Nhập 0 để trở về menu
-	    do
-	    {
-	        printf("Nhập 0 để quay lại menu: ");
-	        scanf("%d", &zero);
-	    }
-	    while (zero != 0);
             break;
-        }
 
         case 4:
             // Kết thúc chương trình
@@ -157,8 +133,18 @@ int main()
             printf("\nLựa chọn không hợp lệ!");
             printf("\nHãy chọn lại\n\n");
             printf("Hoặc ấn tổ hợp Ctrl C để dừng lại!!!");
+            break;
         }
 
+        //Nhập 0 để trở về menu
+	    do
+	    {
+	        printf("Nhập 0 để quay lại menu: ");
+	        scanf("%d", &zero);
+	    }
+	    while (zero != 0);
+            break;
+        }
     } while (chon != 4);
 
     cout<<endl;
