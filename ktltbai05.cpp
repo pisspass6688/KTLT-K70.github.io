@@ -33,14 +33,14 @@ int main()
     {
         // Menu chương trình
         printf("\n\n============================================\n");
-        printf("       Tính Diện Tích và Chu Vi Các Hình\n");
+        printf("\t\t||     Tính Diện Tích và Chu Vi Các Hình\n");
         printf("============================================\n");
-        printf("1. Tính Diện Tích và Chu Vi hình tam giác.\n");
-        printf("2. Tính Diện Tích và Chu Vi hình tròn.\n");
-        printf("3. Tính Diện Tích và Chu Vi hình chữ nhật.\n");
-        printf("4. Kết thúc chương trình.\n");
-        printf("============================================\n\n");
-        printf("Chọn hình để tính (1/2/3/4): ");
+        printf("\t\t|| 1. Tính Diện Tích và Chu Vi hình tam giác.\n");
+        printf("\t\t|| 2. Tính Diện Tích và Chu Vi hình tròn.\n");
+        printf("\t\t|| 3. Tính Diện Tích và Chu Vi hình chữ nhật.\n");
+        printf("\t\t|| 4. Kết thúc chương trình.\n");
+        printf("\t\t============================================\n\n");
+        printf("\tChọn hình để tính (1/2/3/4): ");
         scanf("%d", &chon);
 
         switch (chon)
