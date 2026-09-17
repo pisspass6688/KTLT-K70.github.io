@@ -18,6 +18,7 @@ Bài 05(ktltbai05.cpp): Viết chương trình tạo menu sau:
     Khi đưa kết quả ra màn hình phải dừng lại để người sử dụng xem, chờ cho đến khi người sử dụng
     ấn phím bất kỳ thì quay trở lại menu. Khi người sử dụng chọn 4 thì kết thúc chương trình.
 */
+#include<iostream>
 #include <stdio.h>
 #include <math.h>
 
