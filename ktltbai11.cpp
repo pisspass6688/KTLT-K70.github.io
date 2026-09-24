@@ -23,8 +23,8 @@ int main()
     printf("Chương trình tính tích 2 ma trận nguyên: C = A x B");
     printf("\n\nNhập vào kích thước ma trận A (mxp): ");
     scanf("%d%d",&m,&p);
-    printf("Nhập vào kích thước ma trận B (pxn): ");
-    scanf("%d%d",&p,&n);
+    printf("Nhập vào số cột của ma trận B (n): ");
+    scanf("%d",&n);
 
     //Nhập vào ma trận A
     printf("\nNhập vào ma trận A:\n");
