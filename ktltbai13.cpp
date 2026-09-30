@@ -24,7 +24,7 @@ int main()
 
     // Nhập xâu nhị phân
     printf("Nhập xâu ký tự số nhị phân (tối đa là 16 ký tự): ");
-    scanf("%16s", s);
+    scanf("%16[01]", s);
 
     // Lấy độ dài xâu
     n = strlen(s);
@@ -33,7 +33,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         //Công thức
-        kq = kq * 2 + (s[i] - '0');
+        kq = kq * 2 + (s[i] - 48);
     }
 
     //Đưa ra giá trị của số nhị phân đó
