@@ -19,13 +19,13 @@ using namespace std;
 int main()
 {
     //Khai báo biến
-    FILE *f;
+    FILE *fp;
     int n,i,j,x;
     int *a,*b;
 
     //Mở tệp để đọc dữ liệu
-    f = fopen("daysonguyen.txt","r");
-    if(f == NULL)
+    fp = fopen("daysonguyen.txt","rt");
+    if(fp == NULL)
     {
         printf("Không mở được tệp daysonguyen.txt");
 
@@ -34,10 +34,10 @@ int main()
     }
 
     //Đọc số phần tử của dãy từ tệp
-    if(fscanf(f,"%d",&n)!=1 || n<0)
+    if(fscanf(fp,"%d",&n)!=1 || n<0)
     {
         printf("Dữ liệu trong tệp không hợp lệ.");
-        fclose(f);
+        fclose(fp);
         return 0;
     }
 
@@ -46,27 +46,34 @@ int main()
     if(n>0 && a==NULL)
     {
         printf("Không đủ bộ nhớ để cấp phát mảng.");
-        fclose(f);
+        fclose(fp);
         return 0;
     }
 
     //Đọc dãy số nguyên từ tệp vào mảng động
     for(i=0;i<n;i++)
     {
-        if(fscanf(f,"%d",&a[i])!=1)
+        if(fscanf(fp,"%d",&a[i])!=1)
         {
             printf("Dữ liệu trong tệp không đầy đủ.");
             free(a);
-            fclose(f);
+            fclose(fp);
             return 0;
         }
     }
 
     //Đóng tệp
-    fclose(f);
+    fclose(fp);
 
     //Nhập giá trị x cần xóa
     printf("Chương trình xóa các phần tử có giá trị bằng x");
+    
+    
+    //Dua ra day so ban dau
+    printf("Day so doc duoc tu tep la:\n");
+    for(i=0;i<n;i++)
+        printf("%d ",a[i]);
+
     printf("\n\nNhập vào giá trị x cần xóa: ");
     if(scanf("%d",&x)!=1)
     {
@@ -96,7 +103,7 @@ int main()
         free(a);
         return 0;
     }
-
+    
     //Sao chép các phần tử còn lại sang mảng mới
     for(i=0;i<j;i++)
         b[i] = a[i];
