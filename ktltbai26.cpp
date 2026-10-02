@@ -29,8 +29,9 @@ int main()
     fp=fopen("daysonguyen.txt","rt");
     if(fp==NULL)
     {
-        printf("Khong mo duoc tep daysonguyen.txt!");
-        return 1;
+        printf("\nKhong mo duoc tep daysonguyen.txt!");
+        printf("\nKet thuc chuong trinh de kiem tra lai tep!\n\n");
+        return 0;
     }
 
     //Doc so phan tu cua day
