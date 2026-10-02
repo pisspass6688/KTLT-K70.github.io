@@ -22,8 +22,7 @@ unsigned int duaRa(int *a,int n);
 int main()
 {
     //Khai bao bien
-    int n;
-    int *a;
+    int n, *a;
     FILE *fp;
 
     //Mo tep de doc
